@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+
+}
+
+.loader {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-clr);
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.logo-desktop2 {
+    position: absolute;
+    font-size: 38px;
+    padding: 7px 9px;
+    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
+    border-radius: 18px;
+    margin-top: 5px;
+    margin-left: -8px;
+    z-index: 1002;
+    opacity: 0;
+    animation: move-up 0.5s forwards, press 0.2s forwards 0.5s ;
+}
+
+.logo-bg2 {
+    color: transparent;
+    padding: 6px 8px;
+    width: 247px;
+    height: 40px;
+    background: var(--lightgrey);
+    border-radius: 18px;
+    margin-top: 20px;
+    margin-left: 7px;
+    z-index: 1001;
+    opacity: 0;
+    animation: move-up 0.5s forwards;
+}
+
+@keyframes move-up {
+    50% {
+        opacity: 1;
+        transform: translateY(-170px);
+    } 100% {
+        opacity: 1;
+        transform: translateY(-150px);
+    }
+}
+
+@keyframes press {
+    0% {} 50% {
+        margin-top: 20px; 
+        margin-left: 5px; 
+    } 100% {
+        margin-top: 5px; 
+        margin-left: -8px; 
+    }
+}

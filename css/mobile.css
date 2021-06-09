@@ -83,7 +83,7 @@ header.active {
 }
 
 .nav-list-desktop .nav-item:nth-child(1){
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .active .nav-list-desktop .nav-item {
@@ -158,12 +158,12 @@ html {
 @media only screen 
     and (max-width: 760px) {
     html {
-        background-color: black;
+        background-color: rgb(2, 18, 29);
     }
     /* start */
     .card-container {
         display: block;
-        margin: 0px;
+        margin: 0;
     }
     /* project and footer alignment */
     .footer{
@@ -186,7 +186,7 @@ html {
     }
 
     .icons {
-        margin-left: 0px;
+        margin-left: 0;
     }
     /* about */
     .about-text {
@@ -206,7 +206,7 @@ html {
     .interests-title {
         margin: 20px;
         margin-bottom: 15px;
-        margin-top: 0px;
+        margin-top: 0;
     }
     /* fist pill space */
     .first {
@@ -214,7 +214,7 @@ html {
     }
     /* last pill space */
     .last {
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
     .h-scroll {
@@ -222,7 +222,7 @@ html {
     }
 
     .h-scroll::-webkit-scrollbar{
-        height: 0px;
+        height: 0;
         background-color: transparent;
     }
     /* project */
@@ -231,6 +231,6 @@ html {
     }  
 
     .card-container:nth-of-type(4) {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
