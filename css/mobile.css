@@ -158,7 +158,7 @@ html {
 @media only screen 
     and (max-width: 760px) {
     html {
-        background-color: rgb(2, 18, 29);
+        background-color: rgb(2, 13, 20);
     }
     /* start */
     .card-container {
@@ -210,13 +210,12 @@ html {
     }
     /* fist pill space */
     .first {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
     .h-scroll {
         overflow-x: auto;
-        background-color: red;
-        padding-right: 20px;
+        padding-right: 35px;
     }
 
     .h-scroll::-webkit-scrollbar{
