@@ -212,6 +212,10 @@ html {
     .first {
         margin-left: 15px;
     }
+    /* last pill space */
+    .last {
+        margin-right: 15px;
+    }
 
     .h-scroll {
         overflow-x: auto;

@@ -307,6 +307,10 @@ header {
     font-size: 14px;
     align-items: center;
 }
+/* last pill spaceing */
+.last {
+    margin-right: 0;
+}
 
 .interests-pill img {
     padding-right: 10px;
