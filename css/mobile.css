@@ -102,48 +102,78 @@ header.active {
 html {
     overflow: auto;
 }
+/* about/featured scrollbar */
+.about-text::-webkit-scrollbar {
+    width: 12px;
+}
+
+.about-text::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
+    border-radius: 20px;       
+    border: 3.5px solid transparent;
+    background-clip: padding-box;
+}
+
+.about-text::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 5px;    
+}
+
+.about-text::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
 /* about mobile scroll */
 .about-text {
-    max-height: 210px;
+    max-height: 230px;
+    overflow: auto;
 }
 
 /* TABLET */
 @media only screen 
   and (min-width: 760px) 
-  and (max-width: 1024px) 
-  {
+  and (max-width: 1024px) {
     .start-text {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     .start-pic img {
-    max-width: 350px;
-    max-height: 250px;
+        max-width: 350px;
+        max-height: 250px;
     }
 
     .card-container {
         margin-top: 30px;
     }
+    /* interests section */
+    .interests {
+        margin: 20px;
+    }
     /* tablet grid sizing */
     .grid {
         display: block;
         margin: 10px;
-    }
+    } 
 }
 
 /* PHONE */
 @media only screen 
     and (max-width: 760px) {
+    html {
+        background-color: black;
+    }
     /* start */
     .card-container {
         display: block;
         margin: 0px;
     }
-
-    .text {
-        padding-top: 15px;
-        margin-top: 20px;
+    /* project and footer alignment */
+    .footer{
         display: flex;
+        margin-top: 0;
+    }
+
+    .projects-title {
+        display: flex;
+        margin-top: 0;
     }
 
     .start-pic {
@@ -160,16 +190,36 @@ html {
     }
     /* about */
     .about-text {
-        font-size: 16px;
         max-width: 100%;
+        padding-right: 7px;
     }
 
     .about {
         margin: 20px;
+        background-color: var(--bg-clr);
     }
 
     .about-pic img {
-        max-height: 225px;
+        max-height: 230px;
+    }
+    /* interests */
+    .interests-title {
+        margin: 20px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    /* fist pill space */
+    .first {
+        margin-left: 15px;
+    }
+
+    .h-scroll {
+        overflow-x: auto;
+    }
+
+    .h-scroll::-webkit-scrollbar{
+        height: 0px;
+        background-color: transparent;
     }
     /* project */
     .projects {
@@ -177,6 +227,6 @@ html {
     }  
 
     .card-container:nth-of-type(4) {
-        margin-top: 00px;
+        margin-top: 0px;
     }
 }

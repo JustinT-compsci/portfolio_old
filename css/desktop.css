@@ -97,7 +97,7 @@ header {
     font-size: 32px;
     padding: 5px 7px;
     background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
-    border-radius: 12px;
+    border-radius: 14px;
     margin-top: 14px;
     margin-left: 0px;
 }
@@ -120,7 +120,7 @@ header {
     width: 208px;
     height: 33px;
     background: var(--lightgrey);
-    border-radius: 12px;
+    border-radius: 14px;
     margin-top: 14px;
     margin-left: 0px;
     animation: logo 0.3s ease forwards;
@@ -140,14 +140,10 @@ header {
     padding-bottom: 20px;
     background: linear-gradient(45deg,rgb(34, 22, 68) 50%, rgb(6, 28, 100) 100%);
 }
-/* projects title margin */
-.card-container:nth-of-type(4) {
-    margin-top: 10px;
-}
 
 .start {
     background: url(../img/pattern.svg), var(--lightgrey);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 20px;
     display: flex;
     margin: 20px;
@@ -183,7 +179,7 @@ header {
     font-size: 36px;
     padding: 10px;
     margin-left: 10px;
-    border-radius: 12px;
+    border-radius: 16px;
     width: 190px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -213,7 +209,7 @@ header {
     width: 190px;
     height: 42px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 16px;
     opacity: 0;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
     transition: opacity 0.3s ease-in-out;
@@ -240,12 +236,12 @@ header {
     max-width: 400px;
     max-height: 300px;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 /* about */
 .about {
     border: 2px var(--blue) solid;
-    border-radius: 12px;
+    border-radius: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -258,7 +254,7 @@ header {
     font-size: 20px;
     height: 25px;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 12px;
     border-bottom: 2px var(--blue) solid;
     justify-content: space-between;
 }
@@ -275,26 +271,6 @@ header {
     padding: 15px;
     max-width: 620px;
     font-family: var(--apple);
-    overflow: auto;
-}
-/* about/featured scrollbar */
-.about-text::-webkit-scrollbar {
-    width: 12px;
-}
-
-.about-text::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
-    border-radius: 20px;       
-    border: 3.5px solid transparent;
-    background-clip: padding-box;
-}
-
-.about-text::-webkit-scrollbar-track-piece:end {
-    margin-bottom: 2px;    
-}
-
-.about-text::-webkit-scrollbar-track-piece {
-    background-color: transparent;
 }
 /* about-pic */
 .about-pic {
@@ -302,7 +278,7 @@ header {
     margin: 20px;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 16px;
     background-color: var(--darkgrey);
     opacity: 0;
     animation: fade-up 0.3s ease-in 0.5s forwards;
@@ -313,10 +289,39 @@ header {
     max-width: 450px;
     max-height: 300px;
 }
+/* interests */
+.interests {
+    font-family: var(--apple);
+    max-width: 960px;
+    height: 130px;
+    opacity: 0; 
+    animation: fade-up 0.3s ease-in 0.7s forwards;
+}
 
+.interests-pill {
+    display: flex;
+    background-color: var(--darkgrey);
+    border-radius: 40px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.interests-pill img {
+    padding-right: 10px;
+}
 /* featured */
 
 /* projects */
+.projects-title {
+    font-size: 20px; 
+    opacity: 0; 
+    animation: fade-up 0.3s ease-in 0.9s forwards; 
+    padding: 15px; 
+    margin-top: 35px;
+}
+
 .projects {
     position: relative;
     display: grid;
@@ -330,7 +335,7 @@ header {
 
 .card {
     margin: 10px;
-    border-radius: 12px;
+    border-radius: 16px;
     font-family: var(--apple);
     background-color: var(--darkgrey); 
     overflow: hidden;
@@ -347,7 +352,6 @@ header {
 .heading {
     padding-top: 10px;
     padding-left: 10px;
-    font-weight: 400;
     opacity: 0.7;
 }
 
@@ -371,8 +375,8 @@ header {
 
 .project-pic {
     padding: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
 }
@@ -391,17 +395,21 @@ header {
     }   
 }
 
+@keyframes fade-up-dim {
+    0% {
+        transform: translateY(20px); 
+        -webkit-transform: translateY(20px);
+    } 100% {
+        opacity: 0.7;
+    }   
+}
+
 @keyframes logo {
     0% {} 100% {
         margin-top: 20px;
         margin-left: 7px;
     }
 }
-
-.text {
-    margin-top: 55px;
-}
 /* contact */
-
 /* change start size for larger screen */
-
+/* icons rgb(165,45,130)  */
