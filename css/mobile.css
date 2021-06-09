@@ -215,7 +215,7 @@ html {
 
     .h-scroll {
         overflow-x: auto;
-        padding-right: 35px;
+        padding-right: 50px;
     }
 
     .h-scroll::-webkit-scrollbar{
