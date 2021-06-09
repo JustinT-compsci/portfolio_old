@@ -3,12 +3,11 @@ const loader = document.querySelector(".loader")
 const site = document.querySelector(".site")
 
 function init() {
-
     setTimeout(() => {
-        loader.style.opacity = 0
         loader.style.display = "none";
-        site.style.display = "block";
-    }, 1300)  
+        site.style.display = "block"; 
+        setTimeout(() => (site.style.opacity = 1));
+    }, 1350)  
 }   
 init()
 

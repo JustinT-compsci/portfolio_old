@@ -212,13 +212,11 @@ html {
     .first {
         margin-left: 15px;
     }
-    /* last pill space */
-    .last {
-        margin-right: 20px;
-    }
 
     .h-scroll {
         overflow-x: auto;
+        background-color: red;
+        padding-right: 20px;
     }
 
     .h-scroll::-webkit-scrollbar{
