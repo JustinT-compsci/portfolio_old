@@ -111,11 +111,13 @@ header {
 /* logo transition */
 .logo-desktop:hover {
     transform: translate(3px, 3px);
+    -webkit-transform: translate(3px, 3px);
     transition: all 0.1s ease;
 }
 
 .logo-desktop:active {
     transform: translate(7px, 5px);
+    -webkit-transform: translate(7px, 5px);
     transition: all 0.1s ease;
 }
 

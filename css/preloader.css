@@ -23,6 +23,7 @@
     z-index: 1002;
     opacity: 0;
     animation: move-up 0.6s forwards, press 0.2s forwards 0.6s;
+    -webkit-animation: move-up 0.6s forwards, press 0.2s forwards 0.6s;
 }
 
 .logo-bg2 {
@@ -36,33 +37,40 @@
     z-index: 1001;
     opacity: 0;
     animation: move-up-bg 0.6s forwards;
+    -webkit-animation: move-up-bg 0.6s forwards;
 }
 
 @keyframes move-up {
     50% {
         opacity: 1;
-        transform: translate(-9px,-177px);       
+        transform: translate(-9px,-177px); 
+        -webkit-transform: translate(-9px,-177px);      
     } 100% {
         opacity: 1;
         transform: translate(-9px,-157px);
+        -webkit-transform: translate(-9px,-157px);   
     }
 }
 
 @keyframes move-up-bg {
     50% {
         opacity: 1;
-        transform: translateY(-170px);       
+        transform: translateY(-170px); 
+        -webkit-transform:  translateY(-170px);   
     } 100% {
         opacity: 1;
         transform: translateY(-150px);
+        -webkit-transform: translateY(-150px);   
     }
 }
 
 @keyframes press { 
     50% {
         transform: translate(0px,-150px);
+        -webkit-transform:translate(0px,-150px);      
     } 100% {
         transform: translate(-9px,-157px);
+        -webkit-transform: translate(-9px,-157px); 
     }
 }
 
