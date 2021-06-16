@@ -63,3 +63,12 @@
         margin-right: 14px;
     }
 }
+
+@-webkit-keyframes press { 
+    50% {
+        margin: 0;
+    } 100% {
+        margin-bottom: 14px;
+        margin-right: 14px;
+    }
+}

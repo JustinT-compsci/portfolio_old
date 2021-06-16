@@ -5,9 +5,9 @@
 
 :root {
     --bg-clr: rgb(4, 23, 37);
-    --blue: rgb(10, 132, 255);
+    --blue: rgb(10, 133, 255);
+    --bluegrad: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%); 
     --lightgrey: rgb(250, 250, 250);
-    --grey: rgb(75, 75, 75);
     --darkgrey: rgb(35, 35, 35); 
     --apple: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -21,7 +21,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--grey);    
+    background-color: rgb(75, 75, 75);    
     border-radius: 20px;       
 }
 /* preloader load */
@@ -33,6 +33,7 @@
 
 html {
     scroll-padding-top: 80px;
+    scroll-behavior: smooth;
     font-family: 'Inconsolata', monospace;
     background-color: var(--bg-clr);
     color: white;  
@@ -103,7 +104,7 @@ header {
     position: absolute;
     font-size: 32px;
     padding: 5.5px 7.5px;
-    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
+    background: var(--bluegrad);
     border-radius: 14px;
     margin-top: 14px;
     margin-left: 0;
@@ -164,14 +165,14 @@ header {
 }
 /* icons color */
 .hi {
-    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 75%);
+    background: var(--bluegrad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .start-text {
-    color: var(--grey);
+    color: rgb(75, 75, 75);
     max-width: 500px;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -292,8 +293,8 @@ header {
 
 .about-pic img {
     padding-left: 5px;
-    max-width: 450px;
-    max-height: 300px;
+    max-width: 285px;
+    max-height: 330px;
 }
 /* interests */
 .interests {
@@ -303,7 +304,7 @@ header {
     opacity: 0; 
     animation: fade-up 0.3s ease-in forwards 0.6s;
 }
-
+/* interest icon color rgb(180, 84, 244) */
 .interests-pill {
     display: flex;
     background-color: var(--darkgrey);
@@ -322,14 +323,13 @@ header {
     padding-right: 10px;
 }
 /* featured */
-
 /* projects */
 .projects-title {
     font-size: 20px; 
     opacity: 0; 
     animation: fade-up 0.3s ease-in forwards 0.8s; 
     padding: 15px; 
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .projects {
@@ -352,7 +352,7 @@ header {
 }
 
 .card-1 {
-    background: linear-gradient(45deg,rgb(8, 59, 110) 0%, var(--blue) 100%);
+    background: var(--bluegrad);
 }
 
 .card-2 {
@@ -393,7 +393,7 @@ header {
 
 .project-pic img {
     max-width: 325px;
-    max-height: 200px;
+    max-height: 160px;
 }
 /* load animations */
 @keyframes fade-up {
@@ -414,5 +414,49 @@ header {
     }   
 }
 /* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 960px;
+    height: 230px;
+    padding: 20px 10px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 16px;
+    font-family: var(--apple);
+    background: linear-gradient(45deg,rgb(34, 22, 68) 50%, rgb(6, 28, 100) 100%);
+    opacity: 0;
+    animation: fade-up 0.3s ease-in forwards 1s;
+}
+.contact-heading {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+.contact-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bottom-icons {
+    background: rgba(75, 75, 75, 0.5);
+    margin: auto;
+    box-shadow: none; 
+    padding: 5px 10px;
+}
+/* hide icon dropshadow */
+.bottom-icons::after {
+    display: none;
+}
+/* footer */
+.footer a:link {
+    padding: 15px; 
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.footer a:link:hover {
+    opacity: 0.85;
+}
 /* change start size for larger screen */
-/* icons rgb(165,45,130)  */

@@ -127,10 +127,19 @@ html {
     overflow: auto;
 }
 
+/* contact spacing */
+.contact {
+    margin-top: 20px;
+}
+
 /* TABLET */
 @media only screen 
   and (min-width: 760px) 
   and (max-width: 1024px) {
+    .card-container {
+        margin-top: 30px;
+    }
+
     .start-text {
         font-size: 18px;
     }
@@ -139,19 +148,19 @@ html {
         max-width: 350px;
         max-height: 250px;
     }
-
-    .card-container {
-        margin-top: 30px;
-    }
     /* interests section */
     .interests {
-        margin: 20px;
+        margin: 0 20px;
     }
     /* tablet grid sizing */
     .grid {
         display: block;
         margin: 10px;
     } 
+
+    .projects {
+        margin: auto;
+    }
 }
 
 /* PHONE */
@@ -164,17 +173,6 @@ html {
     .card-container {
         display: block;
         margin: 0;
-    }
-    /* project and footer alignment */
-    .footer{
-        display: flex;
-        margin-top: 0;
-    }
-
-    .projects-title {
-        display: flex;
-        margin-top: 0;
-        padding-bottom: 0;
     }
 
     .start-pic {
@@ -225,10 +223,28 @@ html {
     }
     /* project */
     .projects {
-        margin: 15px;
+        margin: 10px;
     }  
 
     .card-container:nth-of-type(4) {
         margin-top: 0;
     }
+    /* project and footer alignment */
+    .footer{
+        display: flex;
+    }
+
+    .projects-title {
+        display: flex;
+        padding-bottom: 0;
+    }
+    /* contact */
+    .contact-text, .contact-heading {
+       font-size: initial;
+    }
+
+    .bottom-icons {
+        margin: auto;
+    };
 }
+
