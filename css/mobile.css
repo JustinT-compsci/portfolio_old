@@ -133,7 +133,7 @@ html {
 }
 /* interest font */
 .interests-pill {
-    font-size: 12px;
+    padding-left: 10px;
 }
 
 /* TABLET */
