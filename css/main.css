@@ -163,7 +163,7 @@ header {
     font-weight: 500;
     font-size: 24px;
 }
-/* icons color */
+
 .hi {
     background: var(--bluegrad);
     -webkit-background-clip: text;
@@ -182,7 +182,7 @@ header {
     list-style: none;
     display: flex;
     background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.35) 0px 8px 24px;
     font-size: 36px;
     padding: 10px;
     margin-left: 10px;
@@ -218,7 +218,7 @@ header {
     padding: 10px;
     border-radius: 16px;
     opacity: 0;
-    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.35) 0px 8px 24px;
     transition: opacity 0.3s ease-in-out;
     -webkit-transition:  opacity 0.3s ease-in-out;
 }
@@ -242,7 +242,7 @@ header {
 .start-pic img{ 
     max-width: 400px;
     max-height: 300px;
-    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.35) 0px 8px 24px;
     border-radius: 16px;
 }
 /* about */
@@ -301,6 +301,7 @@ header {
     font-family: var(--apple);
     max-width: 960px;
     height: 130px;
+    margin: 0 20px;
     opacity: 0; 
     animation: fade-up 0.3s ease-in forwards 0.6s;
 }
@@ -448,9 +449,12 @@ header {
 }
 /* hide icon dropshadow */
 .bottom-icons::after {
-    display: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 24px;
 }
 /* footer */
+.footer {
+    padding-bottom: 10px;
+}
 .footer a:link {
     padding: 15px; 
     opacity: 0.7;

@@ -131,6 +131,10 @@ html {
 .contact {
     margin-top: 20px;
 }
+/* interest font */
+.interests-pill {
+    font-size: 12px;
+}
 
 /* TABLET */
 @media only screen 
@@ -147,10 +151,6 @@ html {
     .start-pic img {
         max-width: 350px;
         max-height: 250px;
-    }
-    /* interests section */
-    .interests {
-        margin: 0 20px;
     }
     /* tablet grid sizing */
     .grid {
@@ -210,7 +210,7 @@ html {
         margin-bottom: 15px;
         margin-top: 0;
     }
-
+    /* interests scroll */
     .h-scroll {
         overflow-x: auto;
         padding: 0px 20px;
