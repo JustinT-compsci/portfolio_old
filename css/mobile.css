@@ -145,7 +145,8 @@ html {
     }
 
     .start-text {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 45px;
     }
 
     .start-pic img {
@@ -180,8 +181,9 @@ html {
     }
 
     .start-text {
-        font-size: 18px;
+        font-size: 20px;
         max-width: 100%;
+        margin-bottom: 30px;
     }
 
     .icons {
