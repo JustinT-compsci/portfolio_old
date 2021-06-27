@@ -192,7 +192,7 @@ html {
     /* about */
     .about-text {
         max-width: 100%;
-        padding-right: 7px;
+        padding-right: 10px;
     }
 
     .about {
@@ -221,8 +221,6 @@ html {
 
     .h-scroll::-webkit-scrollbar{
         display: none;
-        height: 0px;
-        background-color: transparent;
     }
     /* project */
     .projects {
