@@ -22,3 +22,14 @@ selectElement(".mobile-menu").addEventListener("click", () => {
 window.addEventListener('scroll',  () => {
     selectElement("header").classList.remove("active")
 })
+
+$(document).ready(function() {
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0) {
+            $("header").css({"background-color" : "rgba(0, 0, 0, 0.8)"})
+        }
+        else {
+            $("header").css({"background-color" : "rgba(0, 0, 0, 0.3)"})
+        }
+    })
+})
