@@ -141,13 +141,25 @@ html {
   and (min-width: 760px) 
   and (max-width: 1024px) {
     .card-container {
-        margin-top: 30px;
+        margin-top: 50px;
+    }
+
+    .start-container {
+        margin-top: 0;
+    }
+
+    .start {
+        margin: 20px
     }
 
     .start-text {
-        font-size: 20px;
-        margin-bottom: 45px;
+        max-width: 500px;
     }
+
+    .start-text, .hi {
+        font-size: 20px;
+    }
+
 
     .start-pic img {
         max-width: 350px;
@@ -176,19 +188,29 @@ html {
         margin: 0;
     }
 
+    .start-container {
+        display: flex;
+    }
+
+    .start {
+        margin: 20px;
+    }
+
     .start-pic {
         display: none;
     }
 
     .start-text {
-        font-size: 20px;
-        max-width: 100%;
         margin-bottom: 30px;
     }
-
-    .icons {
-        margin-left: 0;
+    .start-text, .hi {
+        font-size: 20px;
     }
+
+    .left {
+        max-width: 100%;
+    }
+
     /* about */
     .about-text {
         max-width: 100%;
