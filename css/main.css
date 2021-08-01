@@ -272,9 +272,6 @@ header {
 }
 
 .down-arrow {
-    display: block;
-    text-align: center;
-    width: 100%;
     font-size: 26px;
     padding-top: 10px;
     margin-bottom: 10%;
