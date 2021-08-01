@@ -273,8 +273,8 @@ header {
 }
 
 .down-arrow {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-size: 26px;
     padding-top: 10px;
     margin-bottom: 10%;
