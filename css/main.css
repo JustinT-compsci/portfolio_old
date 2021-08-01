@@ -168,7 +168,6 @@ header {
     }
 }
 
-
 .start {
     background: url(../img/pattern.svg), var(--lightgrey);
     border-radius: 16px;
@@ -275,6 +274,7 @@ header {
 .down-arrow {
     display: block;
     text-align: center;
+    width: 100%;
     font-size: 26px;
     padding-top: 10px;
     margin-bottom: 10%;
