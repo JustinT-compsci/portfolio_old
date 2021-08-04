@@ -33,3 +33,12 @@ $(document).ready(function() {
         }
     })
 })
+
+// double animations
+$( document ).ready(function() {
+    // Handler for .ready() called.
+      
+  $(".icons").hover(function() {
+      $(".icons").removeClass("animate");
+    })
+});
