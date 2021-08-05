@@ -1,3 +1,10 @@
+// AOS bug fix
+let scrollRef = 0;
+window.addEventListener('scroll', function() {
+  // increase value up to 10, then refresh AOS
+  scrollRef <= 5 ? scrollRef++ : AOS.refresh();
+});
+
 // loader 
 const loader = document.querySelector(".loader")
 const site = document.querySelector(".site")
