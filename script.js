@@ -2,7 +2,7 @@
 let scrollRef = 0;
 window.addEventListener('scroll', function() {
   // increase value up to 10, then refresh AOS
-  scrollRef <= 5 ? scrollRef++ : AOS.refresh();
+  scrollRef <= 10 ? scrollRef++ : AOS.refresh();
 });
 
 // loader 
@@ -43,8 +43,6 @@ $(document).ready(function() {
 
 // double animations
 $( document ).ready(function() {
-    // Handler for .ready() called.
-      
   $(".icons").hover(function() {
       $(".icons").removeClass("animate");
     })
