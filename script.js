@@ -33,10 +33,10 @@ window.addEventListener('scroll',  () => {
 $(document).ready(function() {
     $(window).scroll(function(){
         if($(this).scrollTop() > 0) {
-            $("header").css({"background-color" : "rgba(0, 0, 0, 0.8)"})
+            $("header").css({"background-color" : "rgba(0, 0, 0, 0.85)"})
         }
         else {
-            $("header").css({"background-color" : "rgba(0, 0, 0, 0.3)"})
+            $("header").css({"background-color" : "rgba(0, 0, 0, 0.25)"})
         }
     })
 })

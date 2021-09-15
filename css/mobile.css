@@ -261,9 +261,16 @@ html {
         display: flex;
     }
 
-    .projects-title {
+    .projects-title, .about-title {
         display: flex;
+        padding-top: 15px;
         padding-bottom: 0;
+    }
+
+    .title-text {
+        width: auto;
+        font-size: 26px;
+        margin: 0;
     }
     /* contact */
     .contact-text, .contact-heading {
