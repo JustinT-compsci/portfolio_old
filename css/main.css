@@ -226,6 +226,7 @@ header {
     margin: 12%;
     margin-top: 13%;
     margin-bottom: 20px;
+    max-height: 540px;
     -webkit-animation: fade-in-top 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.45s both;
     animation: fade-in-top 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.45s both;
 }
@@ -258,7 +259,7 @@ header {
   
 /* width of text side */
 .left {
-    max-width: 60%;
+    max-width: 59%;
 }
 /* start text */
 .hi, .start-text {
@@ -315,13 +316,14 @@ header {
 .icons {
     list-style: none;
     display: flex;
+    justify-content: center;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.35) 0px 8px 24px;
-    font-size: 36px;
+    font-size: calc(34px + 0.5vw);
     padding: 5px 10px;
     margin: 0 auto;
     border-radius: 16px;
-    width: 190px;
+    width: calc(206px + 2.05vw);
     z-index: 1000;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -359,11 +361,11 @@ header {
 }
 
 .icons li {
-    padding: 2px;
+    padding: 2.5px;
 }
 
 .icons li:not(:first-child) {
-    margin-left: 15px;
+    margin-left: 22px;
 }
 /* icons hover animation */
 .icons li:hover {
@@ -372,21 +374,21 @@ header {
     transition: all 0.3s ease;
 }
 /* icons background hover animation */
-.icons::after {
+/* .icons::after {
     content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
-    width: 190px;
-    height: 47px;
+    width:  calc(206px + 2.05vw);
+    height: 100%;
     padding: 5px 10px;
     border-radius: 16px;
     opacity: 0;
     box-shadow: rgba(149, 157, 165, 0.35) 0px 8px 24px;
     transition: opacity 0.3s ease-in-out;
     -webkit-transition:  opacity 0.3s ease-in-out;
-}
+} */
 
 .icons:hover {
     transform: scale(1.05);
@@ -401,7 +403,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .start-pic img{ 
