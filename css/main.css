@@ -7,14 +7,14 @@
     font-family: 'helveticaLight';
     font-weight: normal;
     font-style: normal;
-    src: url('/font/Helvetica-Light.woff') format('woff');
+    src: url('./font/Helvetica-Light.woff') format('woff');
 } 
 
 @font-face {
     font-family: 'helveticaMedium';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/HelveticaNeue-Medium.woff') format('woff');
+    src: url('./font/HelveticaNeue-Medium.woff') format('woff');
 }
 /* colors */
 :root {
