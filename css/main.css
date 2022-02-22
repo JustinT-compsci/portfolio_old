@@ -1,21 +1,8 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-/* fonts */
-@font-face {
-    font-family: 'helveticaLight';
-    font-weight: normal;
-    font-style: normal;
-    src: url('./font/Helvetica-Light.woff') format('woff');
-} 
 
-@font-face {
-    font-family: 'helveticaMedium';
-    font-style: normal;
-    font-weight: normal;
-    src: url('./font/HelveticaNeue-Medium.woff') format('woff');
-}
 /* colors */
 :root {
     --blue: rgb(10, 133, 255);
@@ -41,12 +28,12 @@
     opacity: 0;
     display: none;
     transition: opacity 0.3s ease-in;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
-    font-family: helveticaLight;
     background-color: rgb(2, 15, 26);
     color: white;  
     overflow: overlay;
@@ -263,8 +250,7 @@ header {
 }
 /* start text */
 .hi, .start-text {
-    font-family: helveticaMedium;
-    font-size: 2.1vw;
+    font-size: 2vw;
 }
 
 .hi {
@@ -426,7 +412,6 @@ header {
 }
 /* about */
 .about-title {
-    font-family: helveticaMedium;
     font-size: 30px; 
     opacity: 0; 
     animation: fade-up 0.3s ease-in forwards 0.8s;
@@ -516,7 +501,6 @@ header {
 /* projects */
 .projects-title {
     padding-bottom: 15px;     
-    font-family: helveticaMedium;
     font-size: 30px; 
     opacity: 0; 
     animation: fade-up 0.3s ease-in forwards 0.8s; 
