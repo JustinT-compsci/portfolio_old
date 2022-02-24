@@ -181,12 +181,11 @@ header {
     display: flex; 
     justify-content: center;
     overflow: hidden;
-    margin-top: 100px;
     /* border: red 1px solid; */
 }
 
 .card-container-title {
-    margin-top: 85px;
+    margin-top: 200px;
 }
 /* start background */
 .start-container{
